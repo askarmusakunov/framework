@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests" >
+    <test name="ChromeTest">
+        <parameter name="sUsername" value="alibek" />
+        <parameter name="sPassword" value="password123" />
+        <classes>
+            <class name="apache_POI.DataProviderReadExcel">
+            </class>
+        </classes>
+    </test>
+</suite>
