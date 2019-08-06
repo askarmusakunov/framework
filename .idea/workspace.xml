@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c56448a1-c732-46f5-b8a9-aacf03a44688" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/database/TestNG/testNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/database/TestNG/testNG.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,7 +17,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -104,9 +104,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1399" />
-    <option name="height" value="870" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -116,41 +116,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="FrameWork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FrameWork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FrameWork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FrameWork" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -302,9 +296,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="22" width="1399" height="870" extended-state="0" />
+    <frame x="10" y="23" width="1399" height="708" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22033899" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2100221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -319,7 +313,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Thumbnails" order="7" visible="true" weight="0.05059022" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.85347044" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25162336" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.4351145" />
@@ -536,13 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/javaExamples/Armstrong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/javaExamples/Armstrong.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/javaExamples/ArrayReverse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
