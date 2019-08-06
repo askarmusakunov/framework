@@ -37,4 +37,10 @@ public class Factorial {
     }
 
 
+    static int sum(int i, int x){
+        System.out.println("Hi Aiisha");
+        return i+x;
+    }
+
+
 }
