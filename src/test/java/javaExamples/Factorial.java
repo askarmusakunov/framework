@@ -35,6 +35,8 @@ public class Factorial {
             res *= i;
         return res;
     }
+  static int  sum ( int i, int x){
+        return i+x;
 
-
+  }
 }
