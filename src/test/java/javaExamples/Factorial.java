@@ -36,5 +36,10 @@ public class Factorial {
         return res;
     }
 
+    static int calc(int a, int b) {
+        int res = a+b;
+        return res;
+    }
+
 
 }
