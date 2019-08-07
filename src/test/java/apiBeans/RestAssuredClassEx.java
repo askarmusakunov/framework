@@ -4,9 +4,8 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import utils.WebServiceRunner;
 
-
-import static io.restassured.RestAssured.given;
 
 public class RestAssuredClassEx {
 
@@ -18,10 +17,21 @@ public class RestAssuredClassEx {
 
     public static void main(String args[]) {
 
-        request = RestAssured.given().accept(ContentType.JSON);
+        WebServiceRunner.runEmployeeGetRequest("15806");
 
-        response = request.when().get(url);
-        System.out.println(response.asString());
+        EmployeeResponse employeeResponse = WebServiceRunner.getEmployeeResponse();
+
+        System.out.println(employeeResponse.getEmployee_name());
+
+
+
+
+        WebServiceRunner.runEmployeesGetRequest();
+
+        EmployeeResponse[] employeesResponse = WebServiceRunner.getEmployeesResponse();
+
+        System.out.println(employeesResponse[0].getEmployee_name());
+
     }
 
 
