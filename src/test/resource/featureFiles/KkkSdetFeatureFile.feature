@@ -4,7 +4,7 @@ Background: WebPage is up and running
 
 @FindJob
 Scenario: user should be able to register on WebPage
-Given user on WebPage HomePage
+Given user on HomePage
 When user enters valid credentials
 Then user should be registered
 
