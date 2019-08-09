@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "success": false,
+    "code": 422,
+    "message": "Data validation failed. Please check the response body for detailed error messages.",
+    "rateLimit": {
+      "limit": 30,
+      "remaining": 29,
+      "reset": 2
+    }
+  },
+  "result": [
+    {
+      "field": "email",
+      "message": "Email \"Ali.Sultasddn@kcc.com\" has already been taken."
+    }
+  ]
+}
