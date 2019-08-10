@@ -123,7 +123,7 @@ public class RestExamples {
       // System.out.println(positiveGoRestResponse.getResult().getFirst_name());
        System.out.println(positiveGoRestResponse.getMeta().getRateLimit().getLimit());
        System.out.println(positiveGoRestResponse.getResult());
-       System.out.println(positiveGoRestResponse.getResults().get(0));
+    //   System.out.println(positiveGoRestResponse.getResults().get(0));
 
     }
 }

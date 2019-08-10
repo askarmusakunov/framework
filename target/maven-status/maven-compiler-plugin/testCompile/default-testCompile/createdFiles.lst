@@ -6,6 +6,7 @@ utils/UtilsDataProvider.class
 apiBeans/HeaderManager.class
 apiBeans/EmployeeCreateResponse.class
 javaExamples/ErrorField.class
+stepDefs/CreateUserSteps.class
 apiBeans/RateLimitBean.class
 apiBeans/EmployeesResponse.class
 apiBeans/Result.class

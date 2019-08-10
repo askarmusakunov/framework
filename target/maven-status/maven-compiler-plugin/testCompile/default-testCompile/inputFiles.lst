@@ -11,6 +11,7 @@
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/javaExamples/Factorial.java
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/utils/ExcelDataTest.java
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/utils/ConfigDataProvider.java
+/Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/stepDefs/CreateUserSteps.java
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/apiBeans/EmployeeCreateResponse.java
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/apiBeans/PositiveGoRestResponse.java
 /Users/baha/Desktop/FinalProject/IDSframework/framework/src/test/java/apiBeans/EmployeeCreateRequestBody.java

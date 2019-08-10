@@ -7,13 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumber", "rerun:target/rerun.txt"},
-        features = "src/test/resource/featureFiles", //
-        glue = "stepDefs",     // connecting with StepDefs
-        tags = "@marat",    //
-        dryRun = true
+        features = "src/test/resources/featureFiles", //
+        glue = "stepDefs", // connecting with StepDefs
+        tags = "@smoke"
 )
 
 public class Runner {
-
 
 }
