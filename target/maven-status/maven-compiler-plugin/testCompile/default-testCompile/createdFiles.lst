@@ -9,6 +9,7 @@ javaExamples/ErrorField.class
 stepDefs/CreateUserSteps.class
 apiBeans/RateLimitBean.class
 apiBeans/EmployeesResponse.class
+apiBeans/ResponseWithResults.class
 apiBeans/Result.class
 utils/WaitClass.class
 apiBeans/PositiveGoRestResponse.class

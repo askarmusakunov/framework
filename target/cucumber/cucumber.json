@@ -1,0 +1,356 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "New user should be able to be created",
+        "description": "",
+        "id": "create-user;new-user-should-be-able-to-be-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 549546782,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the following headers are set",
+            "match": {
+              "location": "CreateUserSteps.the_following_headers_are_set(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accept",
+                  "contentType"
+                ]
+              },
+              {
+                "cells": [
+                  "JSON",
+                  "JSON"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103283732,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the following user info is set in body",
+            "match": {
+              "location": "CreateUserSteps.the_following_user_info_is_set_in_body(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "first_name",
+                  "last_name",
+                  "email",
+                  "status",
+                  "gender"
+                ]
+              },
+              {
+                "cells": [
+                  "Alan",
+                  "McMillan",
+                  "Alan.Maked@kcc.com",
+                  "active",
+                  "male"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2453743826,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the post request is sent to create the user",
+            "match": {
+              "location": "CreateUserSteps.the_post_request_is_sent_to_create_the_user()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1726960,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response status should be \"302\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "302",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateUserSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34021240,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the following should be the response",
+            "match": {
+              "location": "CreateUserSteps.the_following_is_the_response(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "first_name",
+                  "last_name",
+                  "gender",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "1",
+                  "Alan",
+                  "McMillan",
+                  "male",
+                  "Alan.Mc@kcc.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "noToken get request should return no info",
+        "description": "",
+        "id": "create-user;notoken-get-request-should-return-no-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 552155,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the following headers are set",
+            "match": {
+              "location": "CreateUserSteps.the_following_headers_are_set(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accept"
+                ]
+              },
+              {
+                "cells": [
+                  "JSON"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2066055978,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the all users are requested",
+            "match": {
+              "location": "CreateUserSteps.theAllUsersAreRequested()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77595,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the response status should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateUserSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3058593,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the following should be the response of get",
+            "match": {
+              "location": "CreateUserSteps.theFollowingShouldBeTheResponseOfGet(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "metaMessage",
+                  "success"
+                ]
+              },
+              {
+                "cells": [
+                  "Authentication failed.",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "user should be able to get info with specific ID",
+        "description": "",
+        "id": "create-user;user-should-be-able-to-get-info-with-specific-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1147737,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the following headers are set",
+            "match": {
+              "location": "CreateUserSteps.the_following_headers_are_set(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accept",
+                  "contentType"
+                ]
+              },
+              {
+                "cells": [
+                  "JSON",
+                  "JSON"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1528462938,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user with id \"24\" is requested",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateUserSteps.theUserWithIdIsRequested(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44766,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the response status should be \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateUserSteps.theResponseStatusIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9373558,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the following users should be in the response",
+            "match": {
+              "location": "CreateUserSteps.theFollowingUsersShouldBeInTheResponse(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "first_name",
+                  "last_name",
+                  "gender"
+                ]
+              },
+              {
+                "cells": [
+                  "18",
+                  "Alyson",
+                  "Goldner",
+                  "female"
+                ]
+              },
+              {
+                "cells": [
+                  "19",
+                  "Stephen",
+                  "Prohaska",
+                  "male"
+                ]
+              },
+              {
+                "cells": [
+                  "20",
+                  "Urban",
+                  "O\u0027Hara",
+                  "male"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create User",
+    "description": "",
+    "id": "create-user",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featureFiles/GoRest.feature",
+    "tags": []
+  }
+]

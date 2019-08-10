@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="6.753568">
+<testcase classname="Create User" name="New user should be able to be created" time="3.144586">
+<system-out><![CDATA[Given the following headers are set.........................................passed
+And the following user info is set in body..................................passed
+When the post request is sent to create the user............................passed
+Then the response status should be "302"....................................passed
+And the following should be the response....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create User" name="noToken get request should return no info" time="2.069858">
+<system-out><![CDATA[Given the following headers are set.........................................passed
+When the all users are requested............................................passed
+And the response status should be "200".....................................passed
+Then the following should be the response of get............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create User" name="user should be able to get info with specific ID" time="1.539124">
+<system-out><![CDATA[Given the following headers are set.........................................passed
+When the user with id "24" is requested.....................................passed
+Then the response status should be "200"....................................passed
+And the following users should be in the response...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

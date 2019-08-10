@@ -25,14 +25,8 @@ formatter.step({
     },
     {
       "cells": [
-        "JSON1",
-        "JSON2"
-      ]
-    },
-    {
-      "cells": [
-        "XML1",
-        "XML2"
+        "JSON",
+        "JSON"
       ]
     }
   ],
@@ -60,7 +54,7 @@ formatter.step({
       "cells": [
         "Alan",
         "McMillan",
-        "Alan.Mc@kcc.com",
+        "Alan.Maked@kcc.com",
         "active",
         "male"
       ]
@@ -85,17 +79,17 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the response status is \"201\"",
+  "name": "the response status should be \"302\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "CreateUserSteps.theResponseStatusIs(String)"
+  "location": "CreateUserSteps.theResponseStatusIs(int)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the following is the response",
+  "name": "the following should be the response",
   "rows": [
     {
       "cells": [
@@ -120,6 +114,170 @@ formatter.step({
 });
 formatter.match({
   "location": "CreateUserSteps.the_following_is_the_response(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "noToken get request should return no info",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the following headers are set",
+  "rows": [
+    {
+      "cells": [
+        "accept"
+      ]
+    },
+    {
+      "cells": [
+        "JSON"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateUserSteps.the_following_headers_are_set(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the all users are requested",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateUserSteps.theAllUsersAreRequested()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the response status should be \"200\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateUserSteps.theResponseStatusIs(int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the following should be the response of get",
+  "rows": [
+    {
+      "cells": [
+        "metaMessage",
+        "success"
+      ]
+    },
+    {
+      "cells": [
+        "Authentication failed.",
+        "false"
+      ]
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateUserSteps.theFollowingShouldBeTheResponseOfGet(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "user should be able to get info with specific ID",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the following headers are set",
+  "rows": [
+    {
+      "cells": [
+        "accept",
+        "contentType"
+      ]
+    },
+    {
+      "cells": [
+        "JSON",
+        "JSON"
+      ]
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateUserSteps.the_following_headers_are_set(String,String\u003e\u003e)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user with id \"24\" is requested",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateUserSteps.theUserWithIdIsRequested(int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the response status should be \"200\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateUserSteps.theResponseStatusIs(int)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the following users should be in the response",
+  "rows": [
+    {
+      "cells": [
+        "id",
+        "first_name",
+        "last_name",
+        "gender"
+      ]
+    },
+    {
+      "cells": [
+        "18",
+        "Alyson",
+        "Goldner",
+        "female"
+      ]
+    },
+    {
+      "cells": [
+        "19",
+        "Stephen",
+        "Prohaska",
+        "male"
+      ]
+    },
+    {
+      "cells": [
+        "20",
+        "Urban",
+        "O\u0027Hara",
+        "male"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateUserSteps.theFollowingUsersShouldBeInTheResponse(String,String\u003e\u003e)"
 });
 formatter.result({
   "status": "passed"
